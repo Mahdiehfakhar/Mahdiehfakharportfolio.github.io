@@ -1,63 +1,80 @@
-<div id="contact" style="background-color: @PrimaryColor;">
-    @if (property is null)
+@inject LanguageService LanguageService
+@using BlazorApp.Models
+
+<div id="contact" class="contact-section">
+    @if (siteProperties is null || currentLanguage is null)
     {
-        <div style="display: flex; justify-content: center; gap: 2.5rem;">
+        <div class="social-container">
             <p><em>Loading...</em></p>
+            @if (loadError is not null)
+            {
+                <p class="error">Error: @loadError</p>
+            }
         </div>
     }
     else if (icons is not null)
     {
-        <div style="display: flex; justify-content: center; gap: 2.5rem;">
-            @if (string.IsNullOrWhiteSpace(property.Email) is false)
+        <div class="social-container">
+            @if (string.IsNullOrWhiteSpace(siteProperties.Email) is false)
             {
-                <a href="mailto:@(property.Email)">
+                <a href="mailto:@(siteProperties.Email)">
                     <img src="@icons.Email" alt="email" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.DevDotTo) is false)
+            @if (siteProperties.DevDotTo != null && string.IsNullOrWhiteSpace(siteProperties.DevDotTo) is false)
             {
-                <a href="https://dev.to/@(property.DevDotTo)" target="_blank" rel="noopener noreferrer">
+                <a href="https://dev.to/@(siteProperties.DevDotTo)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.DevDotTo" alt="Dev.to" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.GitHub) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.GitHub) is false)
             {
-                <a href="https://github.com/@(property.GitHub)" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/@(siteProperties.GitHub)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.GitHub" alt="GitHub" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.Instagram) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.Instagram) is false)
             {
-                <a href="https://instagram.com/@(property.Instagram)" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/@(siteProperties.Instagram)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.Instagram" alt="Instagram" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.LinkedIn) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.LinkedIn) is false)
             {
-                <a href="https://linkedin.com/in/@(property.LinkedIn)" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/@(siteProperties.LinkedIn)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.LinkedIn" alt="LinkedIn" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.Medium) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.Medium) is false)
             {
-                <a href="https://medium.com/@@@(property.Medium)" target="_blank" rel="noopener noreferrer">
+                <a href="https://medium.com/@@@(siteProperties.Medium)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.Medium" alt="Medium" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.Twitter) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.Twitter) is false)
             {
-                <a href="https://twitter.com/@(property.Twitter)" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/@(siteProperties.Twitter)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.Twitter" alt="Twitter" class="social-icon" />
                 </a>
             }
-            @if (string.IsNullOrWhiteSpace(property.YouTube) is false)
+            @if (string.IsNullOrWhiteSpace(siteProperties.YouTube) is false)
             {
-                <a href="https://youtube.com/@(property.YouTube)" target="_blank" rel="noopener noreferrer">
+                <a href="https://youtube.com/@(siteProperties.YouTube)" target="_blank" rel="noopener noreferrer">
                     <img src="@icons.YouTube" alt="YouTube" class="social-icon" />
                 </a>
             }
+            @if (siteProperties.X != null && string.IsNullOrWhiteSpace(siteProperties.X) is false)
+            {
+                <a href="https://x.com/@(siteProperties.X)" target="_blank" rel="noopener noreferrer">
+                    <img src="@icons.X" alt="X" class="social-icon" />
+                </a>
+            }
         </div>
-        <p class="small" style="margin-top: 0; color: white;">Created by @property.Name</p>
+        <p class="small created-by">@currentLanguage.CreatedByText @siteProperties.Name</p>
+    }
+    else
+    {
+        <p>Icons not loaded, but properties are: @siteProperties.Name</p>
     }
 </div>
 
@@ -71,12 +88,70 @@
     [Parameter]
     public string SecondaryColor { get; set; } = string.Empty;
 
-    private SiteProperties? property;
+    private SiteProperties? siteProperties;
+    private LanguageSpecificProperties? currentLanguage;
     private SocialIcons? icons;
+    private string? loadError;
 
     protected override async Task OnInitializedAsync()
     {
-        property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
-        icons = await Http.GetFromJsonAsync<SocialIcons>("sample-data/socialicons.json");
+        LanguageService.OnLanguageChanged += UpdateUI;
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            if (siteProperties == null)
+            {
+                siteProperties = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
+                if (siteProperties == null || !siteProperties.Languages.Any())
+                {
+                    loadError = "No data found in siteproperties.json";
+                    currentLanguage = null;
+                    return;
+                }
+            }
+
+            if (icons == null)
+            {
+                icons = await Http.GetFromJsonAsync<SocialIcons>("sample-data/socialicons.json");
+                if (icons == null)
+                {
+                    loadError = "Social icons failed to load.";
+                }
+            }
+
+            string langCode = LanguageService.CurrentLanguageCode;
+            currentLanguage = siteProperties.Languages.FirstOrDefault(x => x.LangCode == langCode)
+                ?? siteProperties.Languages.FirstOrDefault(x => x.LangCode == "en");
+            if (currentLanguage == null)
+            {
+                loadError = $"No data found for language '{langCode}' or fallback 'en'";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Failed to load data: {ex.Message}";
+            siteProperties = null;
+            currentLanguage = null;
+            icons = null;
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        _ = LoadData();
+    }
+
+    public void Dispose()
+    {
+        LanguageService.OnLanguageChanged -= UpdateUI;
     }
 }

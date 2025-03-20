@@ -1,8 +1,24 @@
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 5rem 0 3rem;
-  width: 100vw;
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 5rem 0 3rem;
+    width: 100%;
+    background-color: var(--primary-color, #333);
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.created-by {
+    margin-top: 0;
+    color: white;
+}
+
+:host {
+    --primary-color: @PrimaryColor;
 }
