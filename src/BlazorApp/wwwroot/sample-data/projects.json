@@ -1,22 +1,288 @@
 [
   {
-    "title": "10 Things To Know About Azure Static Web Apps 🎉",
-    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+    "langCode": "en",
+    "portfolioText": "Portfolio",
+    "projects": [
+      {
+        "title": "10 Things To Know About Azure Static Web Apps 🎉",
+        "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Web Development for Beginners",
+        "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "My Resume Site",
+        "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces and github.dev",
+        "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
   },
   {
-    "title": "Web Development for Beginners",
-    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    "url": "https://github.com/microsoft/web-dev-for-beginners"
+    "langCode": "pt",
+    "portfolioText": "Portfólio",
+    "projects": [
+      {
+        "title": "10 Coisas para Saber Sobre Azure Static Web Apps 🎉",
+        "description": "Colaboração para criar um artigo amigável para iniciantes, explicando Azure Static Web Apps e ferramentas para começar.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Desenvolvimento Web para Iniciantes",
+        "description": "Contribuí com imagens de esboços para acompanhar cada lição. Elas ajudam a fornecer uma representação visual do que está sendo ensinado.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Meu Site de Currículo",
+        "description": "Criado a partir do workshop de currículo da Microsoft e implantado no GitHub Pages. Inclui minha experiência e habilidades de design.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces e github.dev",
+        "description": "Entrevista em vídeo para explicar quando usar GitHub.dev versus GitHub Codespaces e como aproveitar melhor cada ferramenta.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
   },
   {
-    "title": "My Resume Site",
-    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+    "langCode": "es",
+    "portfolioText": "Portafolio",
+    "projects": [
+      {
+        "title": "10 Cosas que Debes Saber sobre Azure Static Web Apps 🎉",
+        "description": "Colaboración para crear un artículo amigable para principiantes que explica Azure Static Web Apps y las herramientas para comenzar.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Desarrollo Web para Principiantes",
+        "description": "Contribuí con imágenes de notas visuales para acompañar cada lección. Estas ayudan a proporcionar una representación visual de lo que se enseña.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Mi Sitio de Currículum",
+        "description": "Creado a partir del taller de currículum de Microsoft y desplegado en GitHub Pages. Incluye mi experiencia y habilidades de diseño.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces y github.dev",
+        "description": "Entrevista en video para explicar cuándo usar GitHub.dev frente a GitHub Codespaces y cómo aprovechar mejor cada herramienta.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
   },
   {
-    "title": "GitHub Codespaces and github.dev",
-    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+    "langCode": "fr",
+    "portfolioText": "Portfolio",
+    "projects": [
+      {
+        "title": "10 Choses à Savoir sur Azure Static Web Apps 🎉",
+        "description": "Collaboration pour créer un article adapté aux débutants afin d'expliquer Azure Static Web Apps et les outils pour démarrer.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Développement Web pour Débutants",
+        "description": "J'ai contribué avec des images de notes visuelles pour accompagner chaque leçon. Elles aident à fournir une représentation visuelle de ce qui est enseigné.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Mon Site de CV",
+        "description": "Créé à partir de l'atelier de CV de Microsoft et déployé sur GitHub Pages. Inclut mon expérience et mes compétences en design.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces et github.dev",
+        "description": "Interview vidéo pour expliquer quand utiliser GitHub.dev par rapport à GitHub Codespaces et comment tirer le meilleur parti de chaque outil.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "de",
+    "portfolioText": "Portfolio",
+    "projects": [
+      {
+        "title": "10 Dinge, die Sie über Azure Static Web Apps wissen müssen 🎉",
+        "description": "Zusammenarbeit zur Erstellung eines anfängerfreundlichen Artikels, der Azure Static Web Apps und die Werkzeuge zum Einstieg erklärt.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Webentwicklung für Anfänger",
+        "description": "Beitrag von Skizzenbildern, die jede Lektion begleiten. Diese helfen, eine visuelle Darstellung des Gelernten zu bieten.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Meine Lebenslauf-Website",
+        "description": "Erstellt aus dem Lebenslauf-Workshop von Microsoft und auf GitHub Pages bereitgestellt. Enthält meine Erfahrungen und Designfähigkeiten.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces und github.dev",
+        "description": "Videointerview, um zu erklären, wann man GitHub.dev und wann GitHub Codespaces nutzen sollte und wie man jedes Tool optimal einsetzt.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "cn",
+    "portfolioText": "作品集",
+    "projects": [
+      {
+        "title": "关于Azure Static Web Apps的10件事 🎉",
+        "description": "合作编写一篇适合初学者的友好文章，帮助解释Azure Static Web Apps及入门的工具。",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "初学者网页开发",
+        "description": "为每节课贡献了草图笔记图像。这些图像有助于提供所教授内容的视觉表现。",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "我的简历网站",
+        "description": "基于微软的简历工作坊创建并部署到GitHub Pages。包括我的经验和设计能力。",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces与github.dev",
+        "description": "视频采访，解释何时使用GitHub.dev与GitHub Codespaces，以及如何最佳使用每个工具。",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "jp",
+    "portfolioText": "ポートフォリオ",
+    "projects": [
+      {
+        "title": "Azure Static Web Appsについて知っておくべき10のこと 🎉",
+        "description": "初心者に優しい記事を作成するためのコラボレーション。Azure Static Web Appsとその入門ツールを解説。",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "初心者のためのウェブ開発",
+        "description": "各レッスンに付随するスケッチノートの画像を提供。教えられている内容の視覚的表現を助ける。",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "私の履歴書サイト",
+        "description": "マイクロソフトの履歴書ワークショップから作成され、GitHub Pagesにデプロイ。私の経験とデザイン能力を含む。",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespacesとgithub.dev",
+        "description": "GitHub.devとGitHub Codespacesのどちらをいつ使うべきか、また各ツールを最大限に活用する方法を説明するビデオインタビュー。",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "ru",
+    "portfolioText": "Портфолио",
+    "projects": [
+      {
+        "title": "10 вещей, которые нужно знать о Azure Static Web Apps 🎉",
+        "description": "Совместная работа над созданием статьи, дружелюбной к новичкам, чтобы объяснить Azure Static Web Apps и инструменты для начала работы.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Веб-разработка для начинающих",
+        "description": "Добавил изображения заметок к каждому уроку. Они помогают визуально представить изучаемый материал.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Мой сайт-резюме",
+        "description": "Создан на основе мастер-класса по резюме от Microsoft и размещен на GitHub Pages. Включает мой опыт и дизайнерские способности.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces и github.dev",
+        "description": "Видеоинтервью, чтобы объяснить, когда использовать GitHub.dev, а когда GitHub Codespaces, и как лучше всего применять каждый инструмент.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "kr",
+    "portfolioText": "포트폴리오",
+    "projects": [
+      {
+        "title": "Azure Static Web Apps에 대해 알아야 할 10가지 🎉",
+        "description": "초보자를 위한 친화적인 기사를 만들기 위한 협업으로, Azure Static Web Apps와 시작 도구를 설명합니다.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "초보자를 위한 웹 개발",
+        "description": "각 강의에 스케치 노트 이미지를 제공했습니다. 이는 가르치는 내용의 시각적 표현을 돕습니다.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "내 이력서 사이트",
+        "description": "마이크로소프트의 이력서 워크숍에서 만들어 GitHub Pages에 배포했습니다. 제 경험과 디자인 능력을 포함합니다.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces와 github.dev",
+        "description": "GitHub.dev와 GitHub Codespaces를 언제 사용해야 하는지, 그리고 각 도구를 최적으로 사용하는 방법을 설명하는 비디오 인터뷰.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "sa",
+    "portfolioText": "محفظة",
+    "projects": [
+      {
+        "title": "10 أشياء يجب معرفتها عن Azure Static Web Apps 🎉",
+        "description": "تعاون لإنشاء مقال ودود للمبتدئين للمساعدة في شرح Azure Static Web Apps والأدوات اللازمة للبدء.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "تطوير الويب للمبتدئين",
+        "description": "ساهمت بصور ملاحظات مرسومة لمرافقة كل درس. تساعد هذه في تقديم تمثيل بصري لما يتم تدريسه.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "موقع سيرتي الذاتية",
+        "description": "تم إنشاؤه من ورشة عمل السيرة الذاتية من مايكروسوفت ونشره على صفحات GitHub. يتضمن خبرتي ومهاراتي في التصميم.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces وgithub.dev",
+        "description": "مقابلة فيديو لشرح متى يجب استخدام GitHub.dev مقابل GitHub Codespaces وكيفية استخدام كل أداة بأفضل طريقة.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
+  },
+  {
+    "langCode": "pl",
+    "portfolioText": "Portfolio",
+    "projects": [
+      {
+        "title": "10 Rzeczy, Które Warto Wiedzieć o Azure Static Web Apps 🎉",
+        "description": "Współpraca przy tworzeniu przyjaznego dla początkujących artykułu, który wyjaśni Azure Static Web Apps i narzędzia do rozpoczęcia pracy.",
+        "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+      },
+      {
+        "title": "Rozwój Stron Internetowych dla Początkujących",
+        "description": "Dostarczyłem obrazy notatek szkicowych do każdej lekcji. Pomagają one w wizualnej reprezentacji tego, co jest nauczane.",
+        "url": "https://github.com/microsoft/web-dev-for-beginners"
+      },
+      {
+        "title": "Moja Strona z CV",
+        "description": "Stworzona na podstawie warsztatu CV od Microsoftu i wdrożona na GitHub Pages. Zawiera moje doświadczenie i umiejętności projektowe.",
+        "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+      },
+      {
+        "title": "GitHub Codespaces i github.dev",
+        "description": "Wywiad wideo, aby wyjaśnić, kiedy używać GitHub.dev a kiedy GitHub Codespaces oraz jak najlepiej wykorzystać każde narzędzie.",
+        "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+      }
+    ]
   }
 ]

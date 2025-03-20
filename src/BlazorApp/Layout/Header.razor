@@ -1,6 +1,140 @@
-<div id="header">
-    <a href="#home" target="_top">Home</a>
-    <a href="#about" target="_top">About</a>
-    <a href="#portfolio" target="_top">Portfolio</a>
-    <a href="#contact" target="_top">Contact</a>
+@inject IJSRuntime JSRuntime
+@inject LanguageService LanguageService
+
+<div class="header-container">
+    <button class="menu-toggle" @onclick="ToggleMenu">
+        @if (isMenuOpen)
+        {
+            <img src="images/menu-close.svg" class="menu-icon" alt="close menu" />
+        }
+        else
+        {
+            <img src="images/menu-burger.svg" class="menu-icon" alt="open menu" />
+        }
+    </button>
+    <nav class="header-nav @(isMenuOpen ? "open" : "")">
+        <a href="#home" target="_top">@GetMenuText("Home")</a>
+        <a href="#about" target="_top">@GetMenuText("About")</a>
+        <a href="#portfolio" target="_top">@GetMenuText("Portfolio")</a>
+        <a href="#contact" target="_top">@GetMenuText("Contact")</a>
+        <div class="language-dropdown">
+            <button class="dropdown-toggle" @onclick="ToggleDropdown">
+                <img src="images/flags/@currentLanguageFlag" alt="@CurrentLanguage" class="flag-icon" />
+            </button>
+            @if (isDropdownOpen && languages != null)
+            {
+                <ul class="dropdown-menu">
+                    @foreach (var lang in languages)
+                    {
+                        <li>
+                            <button @onclick="@(() => SetLanguage(lang.LangCode))">
+                                <img src="images/flags/@lang.Flag" alt="@lang.LanguageName" class="flag-icon" /> @lang.LanguageName
+                            </button>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    </nav>
 </div>
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    private bool isMenuOpen = false;
+    private bool isDropdownOpen = false;
+    private string CurrentLanguage { get; set; } = "English";
+    private string currentLanguageFlag = "en.svg";
+    private List<LanguageData>? languages;
+    private string? loadError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadLanguageData();
+
+        var savedLanguage = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "langCode");
+        if (!string.IsNullOrEmpty(savedLanguage))
+        {
+            SetLanguage(savedLanguage, false);
+        }
+        else
+        {
+            await UpdatePageTitle();
+        }
+    }
+
+    private async Task LoadLanguageData()
+    {
+        try
+        {
+            languages = await Http.GetFromJsonAsync<List<LanguageData>>("sample-data/languages.json");
+            if (languages == null || !languages.Any())
+            {
+                loadError = "No language data found in languages.json";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Failed to load language data: {ex.Message}";
+            Console.WriteLine(loadError);
+        }
+    }
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private void ToggleDropdown()
+    {
+        isDropdownOpen = !isDropdownOpen;
+    }
+
+    private string GetMenuText(string key)
+    {
+        string langCode = GetLanguageCode();
+        var lang = languages?.FirstOrDefault(l => l.LangCode == langCode) ?? languages?.FirstOrDefault(l => l.LangCode == "en");
+        return lang?.Menu.TryGetValue(key, out var text) == true ? text : key;
+    }
+
+    private string GetLanguageCode()
+    {
+        return currentLanguageFlag.Replace(".svg", "");
+    }
+
+    private async void SetLanguage(string langCode, bool saveToStorage = true)
+    {
+        var lang = languages?.FirstOrDefault(l => l.LangCode == langCode) ?? languages?.FirstOrDefault(l => l.LangCode == "en");
+        if (lang != null)
+        {
+            CurrentLanguage = lang.LanguageName;
+            currentLanguageFlag = lang.Flag;
+            LanguageService.SetLanguage(lang.LangCode, lang.LanguageName);
+
+            if (saveToStorage)
+            {
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "langCode", lang.LangCode);
+            }
+
+            await UpdatePageTitle();
+        }
+
+        isDropdownOpen = false;
+        StateHasChanged();
+    }
+
+    private async Task UpdatePageTitle()
+    {
+        string title = GetMenuText("Portfolio");
+        await JSRuntime.InvokeVoidAsync("eval", $"document.title = '{title}'");
+    }
+
+    public class LanguageData
+    {
+        public string LangCode { get; set; } = string.Empty;
+        public Dictionary<string, string> Menu { get; set; } = new();
+        public string LanguageName { get; set; } = string.Empty;
+        public string Flag { get; set; } = string.Empty;
+    }
+}

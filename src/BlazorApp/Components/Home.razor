@@ -1,22 +1,29 @@
-<section class="dark" id="home">
+@inject LanguageService LanguageService
+@using BlazorApp.Models
+
+<section class="dark home-section" id="home">
     @if (hero is not null)
     {
-        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+        <img class="home-background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    <div style="position: absolute; top: 30%; left: 2rem;">
-    @if (property is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <h1>@property.Name</h1>
-        <h2>@property.Title</h2>
-    }
+    <div class="home-content">
+        @if (siteProperties is null || currentLanguage is null)
+        {
+            <p><em>Loading...</em></p>
+            @if (loadError is not null)
+            {
+                <p class="error">Error: @loadError</p>
+            }
+        }
+        else
+        {
+            <h1>@siteProperties.Name</h1>
+            <h2>@currentLanguage.Title</h2>
+        }
     </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
+    <div class="scroll-down">
         <a href="#about" target="_top">
-            <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+            <img src="images/down-arrow.svg" class="scroll-arrow" alt="scroll down" />
         </a>
     </div>
 </section>
@@ -28,12 +35,60 @@
     [Parameter, EditorRequired]
     public required HeroImageService HeroImageService { get; set; }
 
-    private SiteProperties? property;
+    private SiteProperties? siteProperties;
+    private LanguageSpecificProperties? currentLanguage;
     private HeroImage? hero;
+    private string? loadError;
 
     protected override async Task OnInitializedAsync()
     {
-        property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
+        LanguageService.OnLanguageChanged += UpdateUI;
+        await LoadPropertiesData();
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
+    }
+
+    private async Task LoadPropertiesData()
+    {
+        try
+        {
+            if (siteProperties == null)
+            {
+                siteProperties = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
+                if (siteProperties == null || !siteProperties.Languages.Any())
+                {
+                    loadError = "No data found in siteproperties.json";
+                    currentLanguage = null;
+                    return;
+                }
+            }
+
+            string langCode = LanguageService.CurrentLanguageCode;
+            currentLanguage = siteProperties.Languages.FirstOrDefault(x => x.LangCode == langCode)
+                ?? siteProperties.Languages.FirstOrDefault(x => x.LangCode == "en");
+            if (currentLanguage == null)
+            {
+                loadError = $"No data found for language '{langCode}' or fallback 'en'";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Failed to load siteproperties data: {ex.Message}";
+            siteProperties = null;
+            currentLanguage = null;
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        _ = LoadPropertiesData();
+    }
+
+    public void Dispose()
+    {
+        LanguageService.OnLanguageChanged -= UpdateUI;
     }
 }

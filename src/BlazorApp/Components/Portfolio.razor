@@ -1,31 +1,35 @@
-<section class="light" id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-container">
-    @if (projects is null)
+@inject LanguageService LanguageService
+@using BlazorApp.Models
+
+<section class="light portfolio-section" id="portfolio">
+    @if (hero is not null)
     {
-        <p><em>Loading...</em></p>
+        <img class="portfolio-background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    else
-    {
-        <div class="portfolio-hero">
-            @if (hero is not null)
+    <div class="portfolio-content">
+        <h2>@GetTranslatedText("Portfolio")</h2>
+        <div class="portfolio-container">
+            @if (projects is null)
             {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
+                <p><em>Loading...</em></p>
+                @if (loadError is not null)
+                {
+                    <p class="error">Error: @loadError</p>
+                }
             }
-        </div>
-        <div class="container">
-            @foreach (var project in projects)
+            else
             {
-                <div class="box" key="@project.Title">
-                    <a href="@project.Url" target="_blank" rel="noopener noreferrer">
-                        <h3 style="flex-basis: 40px;">@project.Title</h3>
-                    </a>
-                    <p class="small">@project.Description</p>
+                <div class="portfolio-grid">
+                    @foreach (var project in projects)
+                    {
+                        <a href="@project.Url" target="_blank" rel="noopener noreferrer" class="portfolio-card" key="@project.Title">
+                            <h3>@project.Title</h3>
+                            <p class="small">@project.Description</p>
+                        </a>
+                    }
                 </div>
             }
         </div>
-    }
     </div>
 </section>
 
@@ -38,10 +42,73 @@
 
     private List<Project>? projects;
     private HeroImage? hero;
+    private string? loadError;
+    private ProjectLanguage? projectLang;
+    private List<ProjectLanguage>? allProjectData;
 
     protected override async Task OnInitializedAsync()
     {
-        projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
+        LanguageService.OnLanguageChanged += UpdateUI;
+        await LoadProjectData();
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
+    }
+
+    private async Task LoadProjectData()
+    {
+        try
+        {
+            if (allProjectData == null)
+            {
+                allProjectData = await Http.GetFromJsonAsync<List<ProjectLanguage>>("sample-data/projects.json");
+                if (allProjectData == null || !allProjectData.Any())
+                {
+                    loadError = "No data found in projects.json";
+                    projects = null;
+                    projectLang = null;
+                    return;
+                }
+            }
+
+            string langCode = LanguageService.CurrentLanguageCode;
+            projectLang = allProjectData.FirstOrDefault(x => x.LangCode == langCode) ?? allProjectData.FirstOrDefault(x => x.LangCode == "en");
+            if (projectLang == null)
+            {
+                loadError = $"No data found for language '{langCode}' or fallback 'en'";
+                projects = null;
+            }
+            else
+            {
+                projects = projectLang.Projects;
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Failed to load projects data: {ex.Message}";
+            projects = null;
+            projectLang = null;
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+
+    private string GetTranslatedText(string key)
+    {
+        if (key == "Portfolio" && projectLang?.PortfolioText != null)
+        {
+            return projectLang.PortfolioText;
+        }
+        return key;
+    }
+
+    private void UpdateUI()
+    {
+        _ = LoadProjectData();
+    }
+
+    public void Dispose()
+    {
+        LanguageService.OnLanguageChanged -= UpdateUI;
     }
 }

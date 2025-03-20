@@ -1,6 +1,5 @@
 {
   "name": "Alexandrie Grenier",
-  "title": "Web Designer & Content Creator",
   "email": "alex@example.com",
   "devDotTo": null,
   "gitHub": "microsoft",
@@ -8,5 +7,63 @@
   "linkedIn": "satyanadella",
   "medium": "",
   "twitter": "microsoft",
-  "youTube": "dotnet"
+  "youTube": "dotnet",
+  "x": null,
+  "languages": [
+    {
+      "langCode": "en",
+      "title": "Web Designer & Content Creator",
+      "createdByText": "Created by"
+    },
+    {
+      "langCode": "pt",
+      "title": "Designer Web & Criadora de Conteúdo",
+      "createdByText": "Criado por"
+    },
+    {
+      "langCode": "es",
+      "title": "Diseñadora Web & Creadora de Contenido",
+      "createdByText": "Creado por"
+    },
+    {
+      "langCode": "fr",
+      "title": "Designer Web & Créatrice de Contenu",
+      "createdByText": "Créé par"
+    },
+    {
+      "langCode": "de",
+      "title": "Webdesignerin & Inhaltserstellerin",
+      "createdByText": "Erstellt von"
+    },
+    {
+      "langCode": "cn",
+      "title": "网页设计师与内容创作者",
+      "createdByText": "创建者"
+    },
+    {
+      "langCode": "jp",
+      "title": "ウェブデザイナー＆コンテンツクリエイター",
+      "createdByText": "作成者"
+    },
+    {
+      "langCode": "ru",
+      "title": "Веб-дизайнер и создатель контента",
+      "createdByText": "Создано"
+    },
+    {
+      "langCode": "kr",
+      "title": "웹 디자이너 & 콘텐츠 크리에이터",
+      "createdByText": "제작자"
+    },
+    {
+      "langCode": "sa",
+      "title": "مصممة ويب ومبدعة محتوى",
+      "createdByText": "تم الإنشاء بواسطة"
+    },
+    {
+      "langCode": "pl",
+      "title": "Projektantka Stron Internetowych & Twórczyni Treści",
+      "createdByText": "Stworzone przez"
+    }
+  ]
 }

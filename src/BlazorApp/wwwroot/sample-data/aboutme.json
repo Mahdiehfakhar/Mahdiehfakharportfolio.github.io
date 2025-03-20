@@ -1,12 +1,156 @@
-{
-  "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
-  "skills": [
-    "Web design",
-    "User experience",
-    "Inclusive design",
-    "Focus group testing",
-    "Mobile user interfaces",
-    "Graphic design"
-  ],
-  "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
-}
+[
+  {
+    "langCode": "en",
+    "aboutMeText": "About Myself",
+    "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
+    "skills": [
+      "Web design",
+      "User experience",
+      "Inclusive design",
+      "Focus group testing",
+      "Mobile user interfaces",
+      "Graphic design"
+    ],
+    "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
+  },
+  {
+    "langCode": "pt",
+    "aboutMeText": "Sobre Mim",
+    "description": "Sou estudante de UI/UX na Universidade Técnica de Barnett. Gosto de criar interfaces de usuário únicas e simples de maneiras criativas.",
+    "skills": [
+      "Design de web",
+      "Experiência do usuário",
+      "Design inclusivo",
+      "Testes com grupos focais",
+      "Interfaces móveis",
+      "Design gráfico"
+    ],
+    "detailOrQuote": "Sou apaixonado por resolver problemas de formas criativas e inovadoras. Com minha experiência em UI/UX, busco constantemente maneiras novas e melhores de tornar a tecnologia acessível a todos."
+  },
+  {
+    "langCode": "es",
+    "aboutMeText": "Sobre Mí",
+    "description": "Soy estudiante de UI/UX en la Universidad Técnica de Barnett. Disfruto creando interfaces de usuario únicas y simples de manera creativa.",
+    "skills": [
+      "Diseño web",
+      "Experiencia del usuario",
+      "Diseño inclusivo",
+      "Pruebas con grupos focales",
+      "Interfaces móviles",
+      "Diseño gráfico"
+    ],
+    "detailOrQuote": "Me apasiona resolver problemas de formas creativas e innovadoras. Aprovechando mi experiencia en UI/UX, busco constantemente formas nuevas y mejores de hacer la tecnología accesible para todos."
+  },
+  {
+    "langCode": "fr",
+    "aboutMeText": "À Propos de Moi",
+    "description": "Je suis étudiant en UI/UX à l'Université Technique de Barnett. J'aime créer des interfaces utilisateur uniques et simples de manière créative.",
+    "skills": [
+      "Design web",
+      "Expérience utilisateur",
+      "Design inclusif",
+      "Tests avec groupes de discussion",
+      "Interfaces mobiles",
+      "Design graphique"
+    ],
+    "detailOrQuote": "Je suis passionné par la résolution de problèmes de manière créative pour stimuler l'innovation. En m'appuyant sur mon expérience en UI/UX, je cherche constamment des moyens nouveaux et meilleurs de rendre la technologie accessible à tous."
+  },
+  {
+    "langCode": "de",
+    "aboutMeText": "Über Mich",
+    "description": "Ich bin UI/UX-Student an der Technischen Universität Barnett. Ich genieße es, einzigartige und einfache Benutzeroberflächen auf kreative Weise zu gestalten.",
+    "skills": [
+      "Webdesign",
+      "Benutzererfahrung",
+      "Inklusives Design",
+      "Fokusgruppentests",
+      "Mobile Benutzeroberflächen",
+      "Grafikdesign"
+    ],
+    "detailOrQuote": "Ich bin leidenschaftlich daran interessiert, Probleme auf neue und kreative Weise zu lösen, um Innovationen voranzutreiben. Mit meiner UI/UX-Erfahrung suche ich kontinuierlich nach neuen und besseren Wegen, Technologie für alle zugänglich zu machen."
+  },
+  {
+    "langCode": "cn",
+    "aboutMeText": "关于我",
+    "description": "我是巴尼特技术大学学习UI/UX的学生。我喜欢以创意的方式打造独特而简洁的用户界面。",
+    "skills": [
+      "网页设计",
+      "用户体验",
+      "包容性设计",
+      "焦点小组测试",
+      "移动用户界面",
+      "平面设计"
+    ],
+    "detailOrQuote": "我热衷于以创新的方式解决问题的热情。通过利用我的UI/UX经验，我不断寻找新的、更优的方法，使技术对所有人更加易于获取。"
+  },
+  {
+    "langCode": "jp",
+    "aboutMeText": "私について",
+    "description": "私はバーネット工科大学でUI/UXを学ぶ学生です。ユニークでシンプルなユーザーインターフェースを創造的な方法で作るのが好きです。",
+    "skills": [
+      "ウェブデザイン",
+      "ユーザーエクスペリエンス",
+      "インクルーシブデザイン",
+      "フォーカスグループテスト",
+      "モバイルユーザーインターフェース",
+      "グラフィックデザイン"
+    ],
+    "detailOrQuote": "私は新しい創造的な方法で問題を解決し、イノベーションを推進することに情熱を注いでいます。UI/UXの経験を活かし、技術をすべての人にアクセスしやすくするための新しいより良い方法を常に模索しています。"
+  },
+  {
+    "langCode": "ru",
+    "aboutMeText": "Обо мне",
+    "description": "Я студент UI/UX в Техническом университете Барнетта. Мне нравится создавать уникальные и простые пользовательские интерфейсы креативными способами.",
+    "skills": [
+      "Веб-дизайн",
+      "Пользовательский опыт",
+      "Инклюзивный дизайн",
+      "Тестирование фокус-групп",
+      "Мобильные интерфейсы",
+      "Графический дизайн"
+    ],
+    "detailOrQuote": "Я увлечен решением проблем новыми творческими способами для стимулирования инноваций. Опираясь на свой опыт в UI/UX, я постоянно ищу новые и лучшие способы сделать технологии доступными для всех."
+  },
+  {
+    "langCode": "kr",
+    "aboutMeText": "나에 대해",
+    "description": "저는 바넷 기술 대학교에서 UI/UX를 공부하는 학생입니다. 독특하고 단순한 사용자 인터페이스를 창의적인 방식으로 만드는 것을 즐깁니다.",
+    "skills": [
+      "웹 디자인",
+      "사용자 경험",
+      "포괄적 디자인",
+      "포커스 그룹 테스트",
+      "모바일 사용자 인터페이스",
+      "그래픽 디자인"
+    ],
+    "detailOrQuote": "저는 새로운 창의적인 방법으로 문제를 해결하여 혁신을 이끄는 데 열정을 가지고 있습니다. UI/UX 경험을 활용하여 기술을 모두에게 더 쉽게 접근할 수 있도록 새로운 더 나은 방법을 끊임없이 찾고 있습니다."
+  },
+  {
+    "langCode": "sa",
+    "aboutMeText": "عني",
+    "description": "أنا طالب UI/UX في جامعة بارنيت التقنية. أستمتع بإنشاء واجهات مستخدم فريدة وبسيطة بطرق إبداعية.",
+    "skills": [
+      "تصميم الويب",
+      "تجربة المستخدم",
+      "التصميم الشامل",
+      "اختبار مجموعات التركيز",
+      "واجهات المستخدم المتنقلة",
+      "التصميم الجرافيكي"
+    ],
+    "detailOrQuote": "أنا شغوف بحل المشكلات بطرق إبداعية جديدة لدفع الابتكار. من خلال الاستفادة من خبرتي في UI/UX، أبحث باستمرار عن طرق جديدة وأفضل لجعل التكنولوجيا في متناول الجميع."
+  },
+  {
+    "langCode": "pl",
+    "aboutMeText": "O Mnie",
+    "description": "Jestem studentem UI/UX na Uniwersytecie Technicznym Barnett. Lubię tworzyć unikalne i proste interfejsy użytkownika w kreatywny sposób.",
+    "skills": [
+      "Projektowanie stron internetowych",
+      "Doświadczenie użytkownika",
+      "Projektowanie włączające",
+      "Testy grup fokusowych",
+      "Interfejsy mobilne",
+      "Projektowanie graficzne"
+    ],
+    "detailOrQuote": "Pasjonuję się rozwiązywaniem problemów w nowe, kreatywne sposoby, aby napędzać innowacje. Wykorzystując moje doświadczenie w UI/UX, nieustannie szukam nowych i lepszych sposobów, aby technologia była dostępna dla wszystkich."
+  }
+]

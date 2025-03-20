@@ -1,0 +1,123 @@
+[
+  {
+    "langCode": "en",
+    "menu": {
+      "Home": "Home",
+      "About": "About",
+      "Portfolio": "Portfolio",
+      "Contact": "Contact"
+    },
+    "languageName": "English",
+    "flag": "en.svg"
+  },
+  {
+    "langCode": "pt",
+    "menu": {
+      "Home": "Início",
+      "About": "Sobre",
+      "Portfolio": "Portfólio",
+      "Contact": "Contato"
+    },
+    "languageName": "Português",
+    "flag": "pt.svg"
+  },
+  {
+    "langCode": "es",
+    "menu": {
+      "Home": "Inicio",
+      "About": "Acerca",
+      "Portfolio": "Portafolio",
+      "Contact": "Contacto"
+    },
+    "languageName": "Español",
+    "flag": "es.svg"
+  },
+  {
+    "langCode": "fr",
+    "menu": {
+      "Home": "Accueil",
+      "About": "À propos",
+      "Portfolio": "Portfolio",
+      "Contact": "Contact"
+    },
+    "languageName": "Français",
+    "flag": "fr.svg"
+  },
+  {
+    "langCode": "de",
+    "menu": {
+      "Home": "Start",
+      "About": "Über",
+      "Portfolio": "Portfolio",
+      "Contact": "Kontakt"
+    },
+    "languageName": "Deutsch",
+    "flag": "de.svg"
+  },
+  {
+    "langCode": "cn",
+    "menu": {
+      "Home": "首页",
+      "About": "关于",
+      "Portfolio": "作品集",
+      "Contact": "联系"
+    },
+    "languageName": "中文",
+    "flag": "cn.svg"
+  },
+  {
+    "langCode": "jp",
+    "menu": {
+      "Home": "ホーム",
+      "About": "概要",
+      "Portfolio": "ポートフォリオ",
+      "Contact": "連絡先"
+    },
+    "languageName": "日本語",
+    "flag": "jp.svg"
+  },
+  {
+    "langCode": "ru",
+    "menu": {
+      "Home": "Главная",
+      "About": "О нас",
+      "Portfolio": "Портфолио",
+      "Contact": "Контакты"
+    },
+    "languageName": "Русский",
+    "flag": "ru.svg"
+  },
+  {
+    "langCode": "kr",
+    "menu": {
+      "Home": "홈",
+      "About": "소개",
+      "Portfolio": "포트폴리오",
+      "Contact": "연락처"
+    },
+    "languageName": "한국어",
+    "flag": "kr.svg"
+  },
+  {
+    "langCode": "sa",
+    "menu": {
+      "Home": "الرئيسية",
+      "About": "عن",
+      "Portfolio": "محفظة",
+      "Contact": "اتصال"
+    },
+    "languageName": "العربية",
+    "flag": "sa.svg"
+  },
+  {
+    "langCode": "pl",
+    "menu": {
+      "Home": "Strona główna",
+      "About": "O nas",
+      "Portfolio": "Portfolio",
+      "Contact": "Kontakt"
+    },
+    "languageName": "Polski",
+    "flag": "pl.svg"
+  }
+]
