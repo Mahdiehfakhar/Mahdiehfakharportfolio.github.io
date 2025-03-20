@@ -2,155 +2,155 @@
   {
     "langCode": "en",
     "aboutMeText": "About Myself",
-    "description": "I am a Software Architect and Developer with over a decade of experience in building robust solutions using C# and .NET. I thrive on turning complex challenges into efficient, innovative systems.",
+    "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
     "skills": [
-      "Software Architecture",
-      "API Optimization",
-      "ERP Integration",
-      "DevOps Practices",
-      "Web Development",
-      "AI Integration"
+      "Web design",
+      "User experience",
+      "Inclusive design",
+      "Focus group testing",
+      "Mobile user interfaces",
+      "Graphic design"
     ],
-    "detailOrQuote": "I’m passionate about solving problems creatively to drive technological innovation. With my expertise in software development, I continuously seek new ways to optimize systems and make technology more impactful and accessible for all."
+    "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
   },
   {
     "langCode": "pt",
     "aboutMeText": "Sobre Mim",
-    "description": "Sou Arquiteto de Software e Desenvolvedor com mais de uma década de experiência na construção de soluções robustas usando C# e .NET. Eu prospero ao transformar desafios complexos em sistemas eficientes e inovadores.",
+    "description": "Sou estudante de UI/UX na Universidade Técnica de Barnett. Gosto de criar interfaces de usuário únicas e simples de maneiras criativas.",
     "skills": [
-      "Arquitetura de Software",
-      "Otimização de APIs",
-      "Integração de ERP",
-      "Práticas DevOps",
-      "Desenvolvimento Web",
-      "Integração de IA"
+      "Design de web",
+      "Experiência do usuário",
+      "Design inclusivo",
+      "Testes com grupos focais",
+      "Interfaces móveis",
+      "Design gráfico"
     ],
-    "detailOrQuote": "Sou apaixonado por resolver problemas de forma criativa para impulsionar a inovação tecnológica. Com minha experiência em desenvolvimento de software, busco continuamente novas maneiras de otimizar sistemas e tornar a tecnologia mais impactante e acessível para todos."
+    "detailOrQuote": "Sou apaixonado por resolver problemas de formas criativas e inovadoras. Com minha experiência em UI/UX, busco constantemente maneiras novas e melhores de tornar a tecnologia acessível a todos."
   },
   {
     "langCode": "es",
     "aboutMeText": "Sobre Mí",
-    "description": "Soy Arquitecto de Software y Desarrollador con más de una década de experiencia en la creación de soluciones robustas utilizando C# y .NET. Disfruto convertir desafíos complejos en sistemas eficientes e innovadores.",
+    "description": "Soy estudiante de UI/UX en la Universidad Técnica de Barnett. Disfruto creando interfaces de usuario únicas y simples de manera creativa.",
     "skills": [
-      "Arquitectura de Software",
-      "Optimización de APIs",
-      "Integración de ERP",
-      "Prácticas DevOps",
-      "Desarrollo Web",
-      "Integración de IA"
+      "Diseño web",
+      "Experiencia del usuario",
+      "Diseño inclusivo",
+      "Pruebas con grupos focales",
+      "Interfaces móviles",
+      "Diseño gráfico"
     ],
-    "detailOrQuote": "Me apasiona resolver problemas de manera creativa para impulsar la innovación tecnológica. Con mi experiencia en desarrollo de software, busco constantemente nuevas formas de optimizar sistemas y hacer que la tecnología sea más impactante y accesible para todos."
+    "detailOrQuote": "Me apasiona resolver problemas de formas creativas e innovadoras. Aprovechando mi experiencia en UI/UX, busco constantemente formas nuevas y mejores de hacer la tecnología accesible para todos."
   },
   {
     "langCode": "fr",
     "aboutMeText": "À Propos de Moi",
-    "description": "Je suis Architecte Logiciel et Développeur avec plus d'une décennie d'expérience dans la création de solutions robustes utilisant C# et .NET. J'excelle à transformer des défis complexes en systèmes efficaces et innovants.",
+    "description": "Je suis étudiant en UI/UX à l'Université Technique de Barnett. J'aime créer des interfaces utilisateur uniques et simples de manière créative.",
     "skills": [
-      "Architecture Logicielle",
-      "Optimisation d'API",
-      "Intégration ERP",
-      "Pratiques DevOps",
-      "Développement Web",
-      "Intégration d'IA"
+      "Design web",
+      "Expérience utilisateur",
+      "Design inclusif",
+      "Tests avec groupes de discussion",
+      "Interfaces mobiles",
+      "Design graphique"
     ],
-    "detailOrQuote": "Je suis passionné par la résolution créative de problèmes pour stimuler l'innovation technologique. Grâce à mon expertise en développement logiciel, je cherche constamment de nouvelles façons d'optimiser les systèmes et de rendre la technologie plus percutante et accessible à tous."
+    "detailOrQuote": "Je suis passionné par la résolution de problèmes de manière créative pour stimuler l'innovation. En m'appuyant sur mon expérience en UI/UX, je cherche constamment des moyens nouveaux et meilleurs de rendre la technologie accessible à tous."
   },
   {
     "langCode": "de",
     "aboutMeText": "Über Mich",
-    "description": "Ich bin Softwarearchitekt und Entwickler mit über einem Jahrzehnt Erfahrung in der Entwicklung robuster Lösungen mit C# und .NET. Ich gedeihe daran, komplexe Herausforderungen in effiziente, innovative Systeme umzuwandeln.",
+    "description": "Ich bin UI/UX-Student an der Technischen Universität Barnett. Ich genieße es, einzigartige und einfache Benutzeroberflächen auf kreative Weise zu gestalten.",
     "skills": [
-      "Softwarearchitektur",
-      "API-Optimierung",
-      "ERP-Integration",
-      "DevOps-Praktiken",
-      "Webentwicklung",
-      "KI-Integration"
+      "Webdesign",
+      "Benutzererfahrung",
+      "Inklusives Design",
+      "Fokusgruppentests",
+      "Mobile Benutzeroberflächen",
+      "Grafikdesign"
     ],
-    "detailOrQuote": "Ich bin leidenschaftlich daran interessiert, Probleme kreativ zu lösen, um technologische Innovationen voranzutreiben. Mit meiner Expertise in der Softwareentwicklung suche ich kontinuierlich nach neuen Wegen, Systeme zu optimieren und Technologie für alle wirkungsvoller und zugänglicher zu machen."
+    "detailOrQuote": "Ich bin leidenschaftlich daran interessiert, Probleme auf neue und kreative Weise zu lösen, um Innovationen voranzutreiben. Mit meiner UI/UX-Erfahrung suche ich kontinuierlich nach neuen und besseren Wegen, Technologie für alle zugänglich zu machen."
   },
   {
     "langCode": "cn",
     "aboutMeText": "关于我",
-    "description": "我是一名软件架构师和开发人员，拥有超过十年的使用C#和.NET构建健壮解决方案的经验。我擅长将复杂的挑战转化为高效、创新的系统。",
+    "description": "我是巴尼特技术大学学习UI/UX的学生。我喜欢以创意的方式打造独特而简洁的用户界面。",
     "skills": [
-      "软件架构",
-      "API优化",
-      "ERP集成",
-      "DevOps实践",
-      "Web开发",
-      "AI集成"
+      "网页设计",
+      "用户体验",
+      "包容性设计",
+      "焦点小组测试",
+      "移动用户界面",
+      "平面设计"
     ],
-    "detailOrQuote": "我热衷于通过创造性地解决问题来推动技术创新。凭借我在软件开发方面的专长，我不断寻找新的方法来优化系统，使技术对所有人更具影响力和可访问性。"
+    "detailOrQuote": "我热衷于以创新的方式解决问题的热情。通过利用我的UI/UX经验，我不断寻找新的、更优的方法，使技术对所有人更加易于获取。"
   },
   {
     "langCode": "jp",
     "aboutMeText": "私について",
-    "description": "私はソフトウェアアーキテクト兼開発者で、C#と.NETを使用して堅牢なソリューションを構築する10年以上の経験があります。複雑な課題を効率的で革新的なシステムに変えることにやりがいを感じています。",
+    "description": "私はバーネット工科大学でUI/UXを学ぶ学生です。ユニークでシンプルなユーザーインターフェースを創造的な方法で作るのが好きです。",
     "skills": [
-      "ソフトウェアアーキテクチャ",
-      "API最適化",
-      "ERP統合",
-      "DevOps実践",
-      "ウェブ開発",
-      "AI統合"
+      "ウェブデザイン",
+      "ユーザーエクスペリエンス",
+      "インクルーシブデザイン",
+      "フォーカスグループテスト",
+      "モバイルユーザーインターフェース",
+      "グラフィックデザイン"
     ],
-    "detailOrQuote": "私は創造的に問題を解決し、技術革新を推進することに情熱を注いでいます。ソフトウェア開発の専門知識を活かし、システムを最適化し、技術をすべての人にとってより影響力があり、アクセスしやすいものにする新しい方法を常に模索しています。"
+    "detailOrQuote": "私は新しい創造的な方法で問題を解決し、イノベーションを推進することに情熱を注いでいます。UI/UXの経験を活かし、技術をすべての人にアクセスしやすくするための新しいより良い方法を常に模索しています。"
   },
   {
     "langCode": "ru",
     "aboutMeText": "Обо мне",
-    "description": "Я архитектор программного обеспечения и разработчик с более чем десятилетним опытом создания надежных решений с использованием C# и .NET. Мне нравится превращать сложные задачи в эффективные и инновационные системы.",
+    "description": "Я студент UI/UX в Техническом университете Барнетта. Мне нравится создавать уникальные и простые пользовательские интерфейсы креативными способами.",
     "skills": [
-      "Архитектура ПО",
-      "Оптимизация API",
-      "Интеграция ERP",
-      "Практики DevOps",
-      "Веб-разработка",
-      "Интеграция ИИ"
+      "Веб-дизайн",
+      "Пользовательский опыт",
+      "Инклюзивный дизайн",
+      "Тестирование фокус-групп",
+      "Мобильные интерфейсы",
+      "Графический дизайн"
     ],
-    "detailOrQuote": "Я страстно увлечен творческим решением проблем для продвижения технологических инноваций. Благодаря своему опыту в разработке программного обеспечения я постоянно ищу новые способы оптимизации систем и делаю технологии более значимыми и доступными для всех."
+    "detailOrQuote": "Я увлечен решением проблем новыми творческими способами для стимулирования инноваций. Опираясь на свой опыт в UI/UX, я постоянно ищу новые и лучшие способы сделать технологии доступными для всех."
   },
   {
     "langCode": "kr",
     "aboutMeText": "나에 대해",
-    "description": "저는 C#과 .NET을 사용해 견고한 솔루션을 구축한 10년 이상의 경험을 가진 소프트웨어 설계자이자 개발자입니다. 복잡한 도전을 효율적이고 혁신적인 시스템으로 바꾸는 데 큰 보람을 느낍니다.",
+    "description": "저는 바넷 기술 대학교에서 UI/UX를 공부하는 학생입니다. 독특하고 단순한 사용자 인터페이스를 창의적인 방식으로 만드는 것을 즐깁니다.",
     "skills": [
-      "소프트웨어 아키텍처",
-      "API 최적화",
-      "ERP 통합",
-      "DevOps 실천",
-      "웹 개발",
-      "AI 통합"
+      "웹 디자인",
+      "사용자 경험",
+      "포괄적 디자인",
+      "포커스 그룹 테스트",
+      "모바일 사용자 인터페이스",
+      "그래픽 디자인"
     ],
-    "detailOrQuote": "저는 창의적으로 문제를 해결하여 기술 혁신을 이끄는 데 열정을 쏟고 있습니다. 소프트웨어 개발 전문성을 바탕으로 시스템을 최적화하고 기술을 모두에게 더 영향력 있고 접근 가능하게 만들기 위해 끊임없이 새로운 방법을 모색합니다."
+    "detailOrQuote": "저는 새로운 창의적인 방법으로 문제를 해결하여 혁신을 이끄는 데 열정을 가지고 있습니다. UI/UX 경험을 활용하여 기술을 모두에게 더 쉽게 접근할 수 있도록 새로운 더 나은 방법을 끊임없이 찾고 있습니다."
   },
   {
     "langCode": "sa",
     "aboutMeText": "عني",
-    "description": "أنا مهندس برمجيات ومطور لدي أكثر من عقد من الخبرة في بناء حلول قوية باستخدام C# و.NET. أزدهر في تحويل التحديات المعقدة إلى أنظمة فعالة ومبتكرة.",
+    "description": "أنا طالب UI/UX في جامعة بارنيت التقنية. أستمتع بإنشاء واجهات مستخدم فريدة وبسيطة بطرق إبداعية.",
     "skills": [
-      "هندسة البرمجيات",
-      "تحسين واجهات البرمجة",
-      "تكامل ERP",
-      "ممارسات DevOps",
-      "تطوير الويب",
-      "تكامل الذكاء الاصطناعي"
+      "تصميم الويب",
+      "تجربة المستخدم",
+      "التصميم الشامل",
+      "اختبار مجموعات التركيز",
+      "واجهات المستخدم المتنقلة",
+      "التصميم الجرافيكي"
     ],
-    "detailOrQuote": "أنا شغوف بحل المشكلات بطريقة إبداعية لدفع الابتكار التكنولوجي. مع خبرتي في تطوير البرمجيات، أبحث باستمرار عن طرق جديدة لتحسين الأنظمة وجعل التكنولوجيا أكثر تأثيرًا وسهولة للجميع."
+    "detailOrQuote": "أنا شغوف بحل المشكلات بطرق إبداعية جديدة لدفع الابتكار. من خلال الاستفادة من خبرتي في UI/UX، أبحث باستمرار عن طرق جديدة وأفضل لجعل التكنولوجيا في متناول الجميع."
   },
   {
     "langCode": "pl",
     "aboutMeText": "O Mnie",
-    "description": "Jestem architektem oprogramowania i programistą z ponad dekadą doświadczenia w tworzeniu solidnych rozwiązań przy użyciu C# i .NET. Rozkwitam, przekształcając złożone wyzwania w efektywne i innowacyjne systemy.",
+    "description": "Jestem studentem UI/UX na Uniwersytecie Technicznym Barnett. Lubię tworzyć unikalne i proste interfejsy użytkownika w kreatywny sposób.",
     "skills": [
-      "Architektura Oprogramowania",
-      "Optymalizacja API",
-      "Integracja ERP",
-      "Praktyki DevOps",
-      "Tworzenie Stron Internetowych",
-      "Integracja AI"
+      "Projektowanie stron internetowych",
+      "Doświadczenie użytkownika",
+      "Projektowanie włączające",
+      "Testy grup fokusowych",
+      "Interfejsy mobilne",
+      "Projektowanie graficzne"
     ],
-    "detailOrQuote": "Pasjonuję się kreatywnym rozwiązywaniem problemów, aby napędzać innowacje technologiczne. Dzięki mojej wiedzy w zakresie tworzenia oprogramowania nieustannie poszukuję nowych sposobów optymalizacji systemów i czynienia technologii bardziej wpływową i dostępną dla wszystkich."
+    "detailOrQuote": "Pasjonuję się rozwiązywaniem problemów w nowe, kreatywne sposoby, aby napędzać innowacje. Wykorzystując moje doświadczenie w UI/UX, nieustannie szukam nowych i lepszych sposobów, aby technologia była dostępna dla wszystkich."
   }
 ]
