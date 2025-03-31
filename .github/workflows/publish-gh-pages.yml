@@ -5,7 +5,7 @@ on:
       - main
       - release/*
 
-# Permissions required for deployment
+# Permissions for deployment
 permissions:
   contents: write
   pages: write
@@ -42,6 +42,11 @@ jobs:
     - name: Publish app
       run: dotnet publish src/BlazorApp -c Release -o published
 
+    - name: Fix base href in index.html for GitHub Pages
+      run: |
+        REPO_NAME=$(basename ${{ github.repository }})
+        sed -i "s|<base href=\"/\"|<base href=\"/$REPO_NAME/\"|g" published/wwwroot/index.html
+
     - name: Upload artifact for deployment
       uses: actions/upload-artifact@v3
       with:
@@ -75,4 +80,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
-
