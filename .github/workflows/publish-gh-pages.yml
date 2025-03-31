@@ -47,6 +47,7 @@ jobs:
         REPO_NAME=$(basename ${{ github.repository }})
         echo "Repository Name: $REPO_NAME"
         sed -i "s|<base href=\"/\"|<base href=\"/$REPO_NAME/\"|g" published/wwwroot/index.html
+        cat published/wwwroot/index.html  # Debugging: Show updated file
 
     - name: Upload artifact for deployment
       uses: actions/upload-artifact@v3
